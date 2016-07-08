@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex</title>
+	<style type="text/css">
+		html{height:100%;}
+		body{height:100%;margin:0;}
+		#box{height:100%; border:2px solid black;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;}
+		#box div{width:100px;height:100px;background:red;border:1px solid white;font-size: 25px;}
+		#box div:nth-of-type(1){-webkit-box-ordinal-group:2;}
+		#box div:nth-of-type(2){-webkit-box-ordinal-group:1;}
+		#box div:nth-of-type(3){-webkit-box-ordinal-group:3;}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+
+		<!-- 
+		这些都加在parent元素上即这里的#box
+		display:box;
+		box-orient:horizontal vertical
+		box-direction:normal reverse
+		box-ordinal-group:1
+		box-flex:1;
+		box-pack:start end center justify
+		box-align:start end center 
+		-->
+
+	</div>
+</body>
+</html>
+
